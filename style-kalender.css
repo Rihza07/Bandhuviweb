@@ -1,0 +1,128 @@
+.calendar-page {
+  padding: 60px 80px;
+  background: #fffaf3;
+  font-family: Inter, sans-serif;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.calendar-header h1 {
+  font-size: 36px;
+  color: #a24b00;
+}
+
+.calendar-header p {
+  color: #c46a1a;
+}
+
+.calendar-layout {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+  gap: 32px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.month-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  overflow: hidden;
+}
+
+.month-title {
+  background: #b45a10;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.day-header,
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.day-header span {
+  font-size: 12px;
+  padding: 6px 0;
+}
+
+.day-header .sun,
+.day-grid .sun {
+  color: red;
+}
+
+.day-grid span {
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.event-school { background: #fde68a; }
+.event-osis { background: #bbf7d0; }
+.event-mps { background: #bfdbfe; }
+.event-meeting { background: #fecaca; }
+
+.month-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #666;
+}
+
+.month-notes {
+  padding: 0 14px 14px;
+  font-size: 12px;
+}
+
+.month-notes a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* SIDEBAR */
+.calendar-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.box.school { background: #fde68a; }
+.box.osis { background: #bbf7d0; }
+.box.mps { background: #bfdbfe; }
+.box.meeting { background: #fecaca; }
